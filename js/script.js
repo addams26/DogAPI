@@ -10,12 +10,15 @@ function onFormSubmit(event) {
 	const dataObject = Object.fromEntries(data.entries());
 
 	let breedName = dataObject.userText.trim();
+	//.trim() removes extra spaces at the start and end
 	let temperament = dataObject.userTemperament;
 
 	getDogs(breedName, temperament);
 }
 
-function getDogs(name, temperament) {
+function getDogs(name, temperament)
+//This calls the next function and hands it the two values
+{
 	const url = `https://api.thedogapi.com/v1/breeds/search?q=${encodeURIComponent(name)}&api_key=${apiKey}`;
 
 	fetch(url)
@@ -47,7 +50,9 @@ function displayData(dogs) {
 	dogs.forEach((dog) => {
 		let image = dog.image ? dog.image.url : "";
 
-		results.innerHTML += `
+		results.innerHTML +=
+		//+= means add this on to what’s already there. Without the +, each dog would replace the last and you’d only see one card which was my error i kept having lol.
+		`
 			<div class="result">
 				<img src="${image}" alt="${dog.name}">
 				<h2>${dog.name}</h2>

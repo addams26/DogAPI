@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+h1 {
+    text-align: center;
+    font-family: "Chewy";
+    font-size: 5rem;
+    color:#82192e;
+    -webkit-text-stroke: 2px black;
+        /* width and color */
+}
+
+body {
+    background-color: #ffd6c0ff;
+
+}
+
+form {
+    padding: 1rem;
+    color: white;
+}
+
+.container {
+max-width: 500px;
+    margin: 2rem auto;
+    background: #4f3439;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: black dotted 1rem;
+}
+
+
+button {
+    background-color: #82192e;
+    padding: .5rem;
+    color: antiquewhite;
+}
+
+.result {
+    max-width: 260px;
+    margin: 2rem auto;
+    background: #4f3439;
+    color: antiquewhite;
+    padding: 1rem;
+    border-radius: 10px;
+    border: black dotted .5rem;
+}
+
+.result img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}

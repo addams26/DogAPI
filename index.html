@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+   <h1>Find a Dog Breed</h1>
+   <div class="container">
+
+   <form>
+
+    <div class="text">
+        <label for="textarea">Breed Name:</label>
+        <br>
+       <br> <textarea id="textarea" name="userText" rows="2" cols="59.5" placeholder="enter breed name"></textarea>
+    </div>
+
+    <div class="select">
+        <label for="temperament">
+            <p>Temperament:</p>
+        </label>
+        <select id="temperament" name="userTemperament">
+    
+            <option value="select">--select a temperament--</option>
+            <option value="playful">Playful</option>
+            <option value="friendly">Friendly</option>
+            <option value="energetic">Energetic</option>
+            <option value="loyal">Loyal</option>
+            <option value="protective">Protective</option>
+            <option value="intelligent">Intelligent</option>
+            <option value="affectionate">Affectionate</option>
+        </select>
+    </div>
+
+    
+    <br><button type="submit"> Search</button>
+   </form>
+   </div>
+<div id="results"></div>
+    
+</body>
+</html>
